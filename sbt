@@ -1,10 +1,10 @@
 #!/bin/bash -au
-JARURL=http://central.maven.org/maven2/com/typesafe/sbt/sbt-launcher/0.13.6/sbt-launcher-0.13.6.jar
+JARURL=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.9/sbt-launch.jar
 JARFILE=$(dirname $0)/sbt-launch.jar
 
 if [ ! -e "$JARFILE" ]
 then
-  curl -so $JARFILE $JARURL
+  curl -Lso $JARFILE $JARURL
 fi
 
 SBT_OPTS="-Xms64M -Xmx256M"
