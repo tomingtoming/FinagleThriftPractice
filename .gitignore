@@ -1,5 +1,13 @@
-*.class
-*.log
+/projectFilesBackup/
+/target/
+/project/project/
+/project/target/
+/.classpath
+/.project
+/.cache
+/.settings
+/logs/*
+/run.log*
 
 # sbt specific
 .cache
@@ -15,3 +23,14 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+# IntelliJ IDEA
+/.idea*
+
+# Mac
+.DS_Store
+
+# sbt binary
+/sbt-launch.jar
+
+*~
